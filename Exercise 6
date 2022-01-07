@@ -1,0 +1,26 @@
+using System;
+
+namespace Exercise_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Prompt for and get an angle in degrees and store it in a float variable.
+
+            Console.WriteLine("write he angle: ");
+            
+            float userInput = float.Parse(Console.ReadLine());
+
+            // Calculate and display the cosine and sine of the angle.
+
+            float angle1 = (float)Math.Cos(userInput * Math.PI / 180);
+
+            Console.WriteLine("cos: " + angle1);
+
+            float angle2 = (float)Math.Sin(userInput * Math.PI / 180);
+
+            Console.WriteLine("sin: " + angle2);
+        }
+    }
+}
