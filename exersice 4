@@ -1,0 +1,29 @@
+using System;
+
+namespace exercise_4
+{
+    internal class Program
+    {
+        /// <summary>
+        /// prompt altiude values nad calculate altude change from point a to b
+        /// </summary>
+        /// <param name="args"></param>
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter First Altitude: ");
+
+            int firstAltitude = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter Second Altitude: ");
+
+            int secondAltitude = int.Parse(Console.ReadLine());
+
+            //subtracting the two values
+
+            int altitudeChange = secondAltitude - firstAltitude;
+
+            Console.WriteLine("Altitude Change: " + altitudeChange);
+
+        }
+    }
+}
