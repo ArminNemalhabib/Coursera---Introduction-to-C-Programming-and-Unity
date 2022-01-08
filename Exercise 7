@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //convert from Fahrenheit to Celsius
+
+            Console.WriteLine("Temperture in Farenheit: ");
+
+            int userInput1 = int.Parse(Console.ReadLine());
+
+            int result1 = (userInput1 - 32) * 5/9;
+
+            Console.WriteLine("Result: " + result1 + " Celsius");
+
+            //convert Celsius to Fahrenheit:
+
+            Console.WriteLine("Temperture in Celsius: ");
+
+            int userInput2 = int.Parse(Console.ReadLine());
+
+            int result2 = (userInput2* 9/5) + 32;
+
+            Console.WriteLine("Result: " + result2 + " Farenheit");
+        }
+    }
+}
