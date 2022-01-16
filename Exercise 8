@@ -30,10 +30,8 @@ namespace Exercise8
 
             Console.WriteLine("Die2:" + die1.TopSide);
             Console.WriteLine("Die2:" + die2.TopSide);
-
             int sum = die1.TopSide + die2.TopSide;
-
-            Console.WriteLine("Sum of dieces; "+ sum);
+            Console.WriteLine("Sum of dice; "+ sum);
 
         }
     }
