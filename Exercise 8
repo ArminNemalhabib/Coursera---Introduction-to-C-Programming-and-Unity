@@ -28,9 +28,14 @@ namespace Exercise8
 
             // print the top sides and the sum of the dice
 
-            Console.WriteLine(die1.TopSide+ die2.TopSide);
+            Console.WriteLine("Die2:" + die1.TopSide);
+            Console.WriteLine("Die2:" + die2.TopSide);
 
+            int sum = die1.TopSide + die2.TopSide;
+
+            Console.WriteLine("Sum of dieces; "+ sum);
 
         }
     }
 }
+
