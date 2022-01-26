@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TeddyBear : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        //move the game object.
+
+        //GetComponent<Rigidbody2D>().AddForce(
+        //    new Vector2(1, 1),
+        //    ForceMode2D.Impulse);
+
+        //move game object in random directions
+        const float MinImpulseForcew = 3f;
+        const float MaxImpulseForce = 5f;
+        float angle=Random.Range(0, 2 * Mathf.PI);
+        Vector2 direction = new Vector2(
+            Mathf.Cos(angle), Mathf.Sin(angle));
+        float magnitude=Random.Range(MinImpulseForcew, MaxImpulseForce);
+        GetComponent<Rigidbody2D>().AddForce(
+            direction * magnitude,
+            ForceMode2D.Impulse);
+    }
+
+    //by reading monobehaviour documentations, call a on collision method.
+    //codes between this line below will happen after collision.
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        print("ouch");
+    }
+}
